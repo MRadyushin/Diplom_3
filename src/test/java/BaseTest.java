@@ -27,7 +27,7 @@ public class BaseTest {
     protected final static boolean EXPECTED_RESULT_TRUE = true;
     //--------------------------------------------------------------------------//
 
-    //Данные для теста LoginTest and TransferConstructorFromAccountTest---------//
+    //Данные для теста LoginTest and TransferConstructorFromAccountTest and LogoutTest//
     final String DEFAULT_EMAIL = "m.radyushin@yandex.ru";
     final String DEFAULT_PASSWORD = "PraktikumAPI";
     //--------------------------------------------------------------------------//
