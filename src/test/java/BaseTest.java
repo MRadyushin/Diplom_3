@@ -18,11 +18,9 @@ public class BaseTest {
     protected String password = RandomStringUtils.randomNumeric(7);
     protected String shortPassword = RandomStringUtils.randomNumeric(3);
     protected String name = RandomStringUtils.randomAlphabetic(6);
-
     protected String[] mailCompanies = new String[]{"yandex", "mail", "rambler"};
     protected int randomMailCompany = new Random().nextInt(mailCompanies.length);
     protected String email = randomString + "@" + mailCompanies[randomMailCompany] + ".ru";
-
     protected final static String INVALID_PASSWORD = "Некорректный пароль";
     protected final static boolean EXPECTED_RESULT_TRUE = true;
     //--------------------------------------------------------------------------//
@@ -36,6 +34,11 @@ public class BaseTest {
     final String ACCOUNT_PROFILE_URL = "https://stellarburgers.nomoreparties.site/account/profile";
     //--------------------------------------------------------------------------//
 
+    //Данные для ConstructorSectionTest-----------------------------------------//
+    protected final static String BUNS = "Булки";
+    protected final static String SAUCES = "Соусы";
+    protected final static String FILLINGS = "Начинки";
+    //--------------------------------------------------------------------------//
 
     MainPage mainPage;
     LoginPage loginPage;
