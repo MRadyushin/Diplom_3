@@ -32,6 +32,10 @@ public class BaseTest {
     final String DEFAULT_PASSWORD = "PraktikumAPI";
     //--------------------------------------------------------------------------//
 
+    //Данные для теста TransferPersonalAccountTest------------------------------//
+    final String ACCOUNT_PROFILE_URL = "https://stellarburgers.nomoreparties.site/account/profile";
+    //--------------------------------------------------------------------------//
+
 
     MainPage mainPage;
     LoginPage loginPage;

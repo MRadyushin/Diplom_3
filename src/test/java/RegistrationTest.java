@@ -14,7 +14,7 @@ import static org.junit.Assert.assertEquals;
 
 public class RegistrationTest extends BaseTest{
 
-     @Test
+    @Test
     @DisplayName("Успешая регистрация")
     @Description("Ожидаем успешную регистрацию")
     public void verificationSuccessfulRegistration() {
