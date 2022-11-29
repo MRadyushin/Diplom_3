@@ -2,7 +2,9 @@ import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 
-public class ConstructorSectionTest extends BaseTest{
+import static org.junit.Assert.assertEquals;
+
+public class ConstructorSectionTest extends BaseTest {
 
     @Test
     @DisplayName("Переход к разделу 'Булки'")
@@ -10,7 +12,7 @@ public class ConstructorSectionTest extends BaseTest{
     public void checkOpenBunsTab() {
         mainPage.clickSaucesTab();
         mainPage.clickBunsTab();
-        mainPage.compareText(BUNS);
+        assertEquals(BUNS, mainPage.textBunsTab());
     }
 
     @Test
@@ -18,7 +20,7 @@ public class ConstructorSectionTest extends BaseTest{
     @Description("Ожидаем открытие раздела 'Соусы'")
     public void checkOpenSaucesTab() {
         mainPage.clickSaucesTab();
-        mainPage.compareText(SAUCES);
+        assertEquals(SAUCES, mainPage.textSaucesTab());
     }
 
     @Test
@@ -26,6 +28,7 @@ public class ConstructorSectionTest extends BaseTest{
     @Description("Ожидаем открытие раздела 'Начинки'")
     public void checkOpenFillingsTab() {
         mainPage.clickFillingsTab();
-        mainPage.compareText(FILLINGS);
+        assertEquals(FILLINGS, mainPage.textFillingsTab());
+
     }
 }

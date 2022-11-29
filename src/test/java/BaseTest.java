@@ -1,7 +1,8 @@
+import com.codeborne.selenide.Configuration;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Before;
 import pageobject.*;
-import com.codeborne.selenide.Configuration;
+
 import java.util.Random;
 
 import static com.codeborne.selenide.Selenide.open;
@@ -9,8 +10,8 @@ import static com.codeborne.selenide.Selenide.open;
 public class BaseTest {
 
     //Общие данные-----------------------------------------------------------------//
-    final String URL = "https://stellarburgers.nomoreparties.site/";
-    final String LOGIN_URL = "https://stellarburgers.nomoreparties.site/login";
+    protected final String URL = "https://stellarburgers.nomoreparties.site/";
+    protected final String LOGIN_URL = "https://stellarburgers.nomoreparties.site/login";
     //-----------------------------------------------------------------------------//
 
     //Данные для теста RegistrationTest--------------------------------------------//
@@ -26,12 +27,12 @@ public class BaseTest {
     //--------------------------------------------------------------------------//
 
     //Данные для теста LoginTest and TransferConstructorFromAccountTest and LogoutTest//
-    final String DEFAULT_EMAIL = "m.radyushin@yandex.ru";
-    final String DEFAULT_PASSWORD = "PraktikumAPI";
+    protected final String DEFAULT_EMAIL = "m.radyushin@yandex.ru";
+    protected final String DEFAULT_PASSWORD = "PraktikumAPI";
     //--------------------------------------------------------------------------//
 
     //Данные для теста TransferPersonalAccountTest------------------------------//
-    final String ACCOUNT_PROFILE_URL = "https://stellarburgers.nomoreparties.site/account/profile";
+    protected final String ACCOUNT_PROFILE_URL = "https://stellarburgers.nomoreparties.site/account/profile";
     //--------------------------------------------------------------------------//
 
     //Данные для ConstructorSectionTest-----------------------------------------//

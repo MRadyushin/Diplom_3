@@ -6,12 +6,12 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class TransferConstructorFromAccountTest extends  BaseTest{
+public class TransferConstructorFromAccountTest extends BaseTest {
 
-     @Test
-     @DisplayName("Переход по клику на «Конструктор»")
-     @Description("Ожидаем успешный переход в конструктор")
-     public void checkOpenConstructorAfterClickToConstructor() {
+    @Test
+    @DisplayName("Переход по клику на «Конструктор»")
+    @Description("Ожидаем успешный переход в конструктор")
+    public void checkOpenConstructorAfterClickToConstructor() {
         loginPage = mainPage.clickLogInToAccountButton();
         loginPage.setEmail(DEFAULT_EMAIL);
         loginPage.setPassword(DEFAULT_PASSWORD);
@@ -20,12 +20,12 @@ public class TransferConstructorFromAccountTest extends  BaseTest{
         mainPage = profilePage.clickConstructor();
         String currentUrl = WebDriverRunner.getWebDriver().getCurrentUrl();
         assertEquals(URL, currentUrl);
-     }
+    }
 
-     @Test
-     @DisplayName("Переход по клику на логотип Stellar Burgers")
-     @Description("Ожидаем успешный переход в конструктор")
-     public void checkOpenConstructorAfterClickToLogo() {
+    @Test
+    @DisplayName("Переход по клику на логотип Stellar Burgers")
+    @Description("Ожидаем успешный переход в конструктор")
+    public void checkOpenConstructorAfterClickToLogo() {
         loginPage = mainPage.clickLogInToAccountButton();
         loginPage.setEmail(DEFAULT_EMAIL);
         loginPage.setPassword(DEFAULT_PASSWORD);
@@ -34,7 +34,7 @@ public class TransferConstructorFromAccountTest extends  BaseTest{
         mainPage = profilePage.clickStellarBurgersLogo();
         String currentUrl = WebDriverRunner.getWebDriver().getCurrentUrl();
         assertEquals(URL, currentUrl);
-     }
+    }
 
     @After
     public void logOut() {

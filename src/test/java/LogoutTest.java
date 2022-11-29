@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class LogoutTest extends BaseTest{
+public class LogoutTest extends BaseTest {
 
     @Test
     @DisplayName("Выход по кнопке «Выйти» в личном кабинете.")

@@ -7,12 +7,13 @@ import model.Login;
 import model.LoginResponse;
 import org.junit.After;
 import org.junit.Test;
+
 import java.util.Objects;
 
 import static org.apache.http.HttpStatus.*;
 import static org.junit.Assert.assertEquals;
 
-public class RegistrationTest extends BaseTest{
+public class RegistrationTest extends BaseTest {
 
     @Test
     @DisplayName("Успешая регистрация")

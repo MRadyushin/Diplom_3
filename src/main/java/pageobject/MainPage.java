@@ -58,15 +58,29 @@ public class MainPage {
     public void clickBunsTab() {
         tabs.get(0).click();
     }
+    @Step("текст Булки")
+    public String textBunsTab() {
+       return tabs.get(0).getText();
+    }
 
     @Step("Нажать Соусы")
     public void clickSaucesTab() {
         tabs.get(1).click();
     }
 
+    @Step("текст Соусы")
+    public String textSaucesTab() {
+        return tabs.get(1).getText();
+    }
+
     @Step("Нажать Начинки")
     public void clickFillingsTab() {
         tabs.get(2).click();
+    }
+
+    @Step("текст Начинки")
+    public String textFillingsTab() {
+        return tabs.get(2).getText();
     }
 
     @Step("Сравнить текст с ожидаемым")
